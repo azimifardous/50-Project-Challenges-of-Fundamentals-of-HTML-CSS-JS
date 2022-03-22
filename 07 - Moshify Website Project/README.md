@@ -23,8 +23,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/azimifardous/50-Project-Challenges-of-Fundamentals-of-HTML-CSS.git
+- Live Site URL: https://moshify-website-project.netlify.app/
 
 ## My process
 
@@ -64,5 +64,5 @@ It's all thanks to MOSH HAMEDANI that really helped me along the way. I am reall
 
 Special Thank to my fellows that were always with me during making this project. We worked, learned, studied, had fun together
 
-- Haroon Hassan [@codingHaroon] (https://twitter.com/codingHaroon)
-- Mirwais Hashimi [@Mirwais55606319] (https://twitter.com/Mirwais55606319)
+- Haroon Hassan [@codingHaroon](https://twitter.com/codingHaroon)
+- Mirwais Hashimi [@Mirwais55606319](https://twitter.com/Mirwais55606319)
