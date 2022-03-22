@@ -22,7 +22,7 @@ There should not be used any JS.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/azimifardous/50-Project-Challenges-of-Fundamentals-of-HTML-CSS.git
 - Live Site URL: https://flyo-data-storage-component-challenge.netlify.app/
 
 ### Built with
