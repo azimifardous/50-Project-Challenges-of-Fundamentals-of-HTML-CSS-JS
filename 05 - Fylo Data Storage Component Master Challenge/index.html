@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fylo Data Storage Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="first-container">
+        <span class="first-container__header"
+          ><img src="assets/logo.svg" alt=""
+        /></span>
+        <span class="first-container__body">
+          <img src="assets/icon-document.svg" alt="" />
+          <img src="assets/icon-folder.svg" alt="" />
+          <img src="assets/icon-upload.svg" alt="" />
+        </span>
+      </div>
+      <div class="second-container">
+        <p class="second-container__text">
+          You've used <strong>815 GB</strong> of your storage.
+        </p>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input class="slider" type="range" min="0" max="1000" value="10" />
+          <div class="labels">
+            <label for="range">0 GB</label>
+            <label for="range">1000 GB</label>
+          </div>
+        </div>
+        <div class="amount-container">
+          <h1>185</h1>
+          <p>GB LEFT</p>
+        </div>
+      </div>
+    </div>
+    <p class="coder">
+      Challenge by
+      <a href="https://frontendmentor.io/"
+        >Frontend Mentor</a> - Code by
+        <a href="http://twitter.com/azimifardous/">AIZ.</a></a
+      >
+    </p>
+  </body>
+</html>
