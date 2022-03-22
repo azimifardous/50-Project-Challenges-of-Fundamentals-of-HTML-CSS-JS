@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Card */
+.card {
+  background: #fff;
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px 5px rgba(197, 197, 197, 0.048);
+}
+
+.card .card__header {
+  background: rgb(11, 101, 204);
+  background-image: url(images/Pattern.png);
+  font-size: 3rem;
+  padding: 4rem 4rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.card__text {
+  padding: 3rem 3rem;
+  font-size: 1.5rem;
+  color: rgb(136, 136, 136);
+}
+.input {
+  display: flex;
+  justify-content: center;
+}
+.input .input__email {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  width: 60%;
+  outline: 0;
+  font-size: 2rem;
+  background: rgb(251, 251, 251);
+  transition: box-shadow 0.2s;
+}
+.input__email:focus {
+  box-shadow: 0 0 5px 5px rgb(193, 222, 255);
+}
+.input .btn__subscribe {
+  background: rgb(11, 101, 204);
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  height: 45px;
+  width: 25%;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn__subscribe:hover {
+  background: rgb(24, 120, 230);
+}
+
+.text--spam {
+  padding: 2rem 4.5rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: rgb(136, 136, 136);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.avatar__text {
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.text__major {
+  font-weight: normal;
+  color: rgb(136, 136, 136);
+}
+
+.footer {
+  margin: 2rem 2rem;
+  font-size: 2rem;
+}
