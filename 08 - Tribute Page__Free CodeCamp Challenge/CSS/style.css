@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: rgb(98, 178, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 178, 255, 1) 0%,
+    rgba(214, 158, 165, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#main {
+  padding: 0 3rem;
+}
+/* Header */
+#img-div {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid white;
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+#image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 5px #ccc;
+}
+
+#img-caption {
+  font-size: 1.7rem;
+  text-align: center;
+}
+#title__heading {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#title__body {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.7rem;
+  border-bottom: 3px solid white;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  #main {
+    padding: 0 10rem;
+  }
+  #title__heading {
+    font-size: 4rem;
+  }
+
+  #title__body {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  #img-caption {
+    font-size: 2.2rem;
+  }
+}
+
+/* Content */
+.description {
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.description p {
+  margin-top: 0;
+}
+.description h2 {
+  margin-bottom: 0;
+}
+.tribute-link {
+  color: black;
+  text-decoration: none;
+}
+.tribute-link::after {
+  content: "\279C";
+  margin-left: 5px;
+  transition: margin-left 0.2s;
+}
+
+.tribute-link:hover::after {
+  margin-left: 10px;
+}
+
+/* Famous Quotes */
+ul {
+  padding: 0 3rem;
+  margin-top: 0;
+}
+
+ul li {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  ul li {
+    text-align: justify;
+  }
+}
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.513);
+}
+.footer a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+.more {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .more,
+  .copyright {
+    font-size: 2rem;
+  }
+}
