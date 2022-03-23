@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform.
+      </p>
+    </header>
+    <form id="survey-form" action="">
+      <span>
+        <label for="name" id="name" class="block-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input-primary"
+          placeholder="Enter your name"
+          minlength="5"
+        />
+      </span>
+      <span>
+        <label for="email" id="email" class="block-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-primary"
+          placeholder="Enter your email address"
+          minlength="5"
+          required
+        />
+      </span>
+      <span>
+        <label for="age" id="age" class="block-label"
+          >Age <label class="optional">(Optional)</label></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="age"
+          class="input-primary"
+          min="1"
+          max="99"
+        />
+      </span>
+      <span>
+        <label for="genre" class="block-label"
+          >Which option best describes your current role?</label
+        >
+        <select name="genre" id="genre" class="input-primary">
+          <option value="Select a current role" disabled selected>
+            Select a current role
+          </option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </span>
+      <span>
+        <label for="feature" class="block-label"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select name="feature" id="feature" class="input-primary">
+          <option value="Select an option" disabled selected>
+            Select an option
+          </option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </span>
+
+      <span>
+        <label for="project" class="block-label"
+          >What would you like to see improved?<label class="optional">
+            (Check all that apply)</label
+          >
+        </label>
+        <label for="frend-p" class="checkbox"
+          ><input type="checkbox" name="frend-p" id="frend-p" />Front-end
+          Projects</label
+        >
+        <label for="bkend-p" class="checkbox"
+          ><input type="checkbox" name="bkend-p" id="bkend-p" />Back-end
+          Projects</label
+        >
+        <label for="DV" class="checkbox"
+          ><input type="checkbox" name="DV" id="DV" />Data Visualization</label
+        >
+        <label for="Challenges" class="checkbox"
+          ><input
+            type="checkbox"
+            name="Challenges"
+            id="Challenges"
+          />Challenges</label
+        >
+        <label for="OPC" class="checkbox"
+          ><input type="checkbox" name="OPC" id="OPC" />Open Source
+          Community</label
+        >
+        <label for="GHR" class="checkbox"
+          ><input type="checkbox" name="GHR" id="GHR" />Gitter help rooms</label
+        >
+        <label for="video" class="checkbox"
+          ><input type="checkbox" name="video" id="video" />Videos</label
+        >
+        <label for="CM" class="checkbox"
+          ><input type="checkbox" name="CM" id="CM" />City Meetups</label
+        >
+        <label for="Wiki" class="checkbox"
+          ><input type="checkbox" name="Wiki" id="Wiki" />Wiki</label
+        >
+        <label for="Forum" class="checkbox"
+          ><input type="checkbox" name="Forum" id="Forum" />Forum</label
+        >
+        <label for="AC" class="checkbox"
+          ><input type="checkbox" name="AC" id="AC" />Additional Courses</label
+        >
+      </span>
+      <span>
+        <label for="comment" class="block-label"
+          >Any comments or suggestions?</label
+        >
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          class="input-primary"
+        ></textarea>
+      </span>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <p class="challenge">
+      Challenge by
+      <a
+        href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+        target="_blank"
+        >FreeCodeCamp</a
+      >
+      - Code by
+      <a href="https//:twitter.com/azimifardous" target="_blank">AIZ</a>
+    </p>
+  </body>
+</html>
