@@ -5,4 +5,4 @@ https://srimba-challenge.netlify.app/
 
 
 ### Desktop Preview ScreenShot
- ![](/Preview.png)
+![](Preview.png)
