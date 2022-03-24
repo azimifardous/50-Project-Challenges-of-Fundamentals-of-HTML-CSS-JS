@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asul&display=swap");
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Neuton", serif;
+  letter-spacing: 5px;
+  margin-top: 0;
+  font-size: 72px;
+  color: #fff;
+  background-color: #281b2d;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.subheading {
+  font-family: "Neuton", serif;
+  letter-spacing: 3px;
+  font-size: 48px;
+  color: #fcd801;
+  background-color: #281b2d;
+  border-bottom: 5px solid #00c54c;
+  padding: 20px;
+  margin: 0;
+}
+
+span {
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.main-content {
+  margin-right: 30px;
+  width: 70%;
+}
+img {
+  margin: 10px 0;
+}
+.sidebar {
+  width: 30%;
+  padding: 15px;
+  background: #9ae84f;
+  height: 80%;
+}
+
+ol li {
+  padding: 10px;
+  font-family: "Asul", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+p,
+ul {
+  font-family: "Asul", sans-serif;
+  text-align: justify;
+}
+
+p.link {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .main-content {
+    width: 100%;
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+  .subheading {
+    text-align: center;
+  }
+
+  p {
+    padding: 0 30px;
+  }
+  ul {
+    padding-left: 50px;
+  }
+
+  img {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  h1 {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 30px;
+  }
+}
