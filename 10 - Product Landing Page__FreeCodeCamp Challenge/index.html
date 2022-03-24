@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/508a0acc27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar collapsable">
+      <img
+        class="nav-bar__logo"
+        src="assets/product-landing-page-logo.png"
+        alt="Logo"
+      />
+      <i class="fa-solid fa-3x fa-bars nav__toggler"></i>
+      <ul class="nav-bar__list collapsable__content">
+        <li class="nav__item"><a href="#features">Features</a></li>
+        <li class="nav__item"><a href="#how-it-works">How it works</a></li>
+        <li class="nav__item"><a href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+    <section class="start">
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <input
+        type="email"
+        name=""
+        id=""
+        placeholder="Enter your email address"
+        required
+      />
+      <button type="submit">Get Started</button>
+    </section>
+    <div class="content cnt-1" id="features">
+      <i class="fa-solid fa-fire-flame-curved fa-4x"></i>
+      <div class="content__cnt">
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <i class="fa-solid fa-truck fa-4x"></i>
+      <div class="content__cnt">
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <i class="fa-solid fa-battery-full fa-4x"></i>
+      <div class="content__cnt">
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+    </div>
+    <div class="video" id="how-it-works">
+      <iframe
+        src="https://www.youtube.com/embed/Jh6jZftn2e0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="card--block" id="pricing">
+      <div class="card">
+        <header class="card__header">
+          <h3>TENOR TROMBONE</h3>
+        </header>
+        <p class="card__price">$600</p>
+        <ul class="card__content">
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <button type="submit">Select</button>
+      </div>
+      <div class="card">
+        <header class="card__header">
+          <h3>BASS TROMBONE</h3>
+        </header>
+        <p class="card__price">$900</p>
+        <ul class="card__content">
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <button type="submit">Select</button>
+      </div>
+      <div class="card">
+        <header class="card__header">
+          <h3>VALVE TROMBONE</h3>
+        </header>
+        <p class="card__price">$1200</p>
+        <ul class="card__content">
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <button type="submit">Select</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__links">
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Contacts</a>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright 2022, Original Trombones.</p>
+      </div>
+      <div class="challenge">
+        <p>
+          Challenge by
+          <a
+            target="_blank"
+            href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
+            >FreeCodeCamp</a
+          >
+          - Code by
+          <a target="_blank" href="https://twitter.com/azimifardous">AIZ.</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
