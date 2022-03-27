@@ -1,0 +1,146 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --font-body: 'Red Hat Display', sans-serif;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-body);
+    background: url(images/pattern-background-mobile.svg);
+    background-color: var(--pale-blue);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: url(images/pattern-background-desktop.svg);
+        background-color: var(--pale-blue);
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+
+.order-card {
+background: #fff;
+width: 420px;
+border-radius: 15px;
+overflow: hidden;
+}
+
+.order-card header img {
+    object-fit: cover;
+}
+
+.body__heading {
+text-align: center;
+margin: 3rem 0;
+margin-bottom: 2rem;
+}
+
+.body__desc {
+    text-align: center;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    color: var(--desaturated-blue);
+}
+
+.body__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+}
+.body__plan a {
+    color: var(--bright-blue);
+}
+
+.body__plan a:hover {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+.plan__desc {
+    margin-left: -5rem;
+}
+
+.plan__desc h2 {
+    color: var(--dark-blue);
+}
+.plan__desc p {
+    color: var(--desaturated-blue);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2em;
+}
+
+.footer__payment-btn, .footer__cancel-btn {
+    border: 0;
+    background: var(--bright-blue);
+    padding: 1.3rem 0; 
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-family: var(--font-body);
+}
+
+.footer__payment-btn {
+    transition: background-color .3s ease;
+}
+.footer__payment-btn:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.footer__cancel-btn {
+    background-color: var(--pale-blue);
+    color: var(--bright-blue);
+    transition: color .2s ease;
+}
+
+.footer__cancel-btn:hover {
+    color: var(--desaturated-blue);
+}
+
+.challenge {
+    color: var(--dark-blue);
+}
+
+.challenge a {
+    color: var(--dark-blue);
+}
+
+.challenge a:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+@media screen and (max-width: 425px) {
+    .order-card {
+        transform: scale(0.7);
+    }
+}
