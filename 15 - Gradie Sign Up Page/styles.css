@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Setting the html element's font-size to 62.5% and then using "rem" unit 
+for measurments make the calculation easy; by defualt 1rem = 16px but if you set this to 62.5%
+then 62.5% * 16 = 10px, it means now 1rem = 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Defining a background for body when its wider than 500px and its content 
+should be centered (Vertically & Horizontally) using flex */
+@media screen and (min-width: 500px) {  
+ body {
+     background-image: url(images/Background.png);
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }   
+}
+.container {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;  
+    
+}
+/* Defining some height and width to contents container when its wider 
+than 500px and 768px (Tablet & Desktop Screens) */
+@media screen and (min-width: 500px) {
+    .container {
+        height: 900px;
+        width: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        height: 540px;
+        width: 900px;
+    }
+}
+
+.container header {
+    background-color: #013243;
+    color: #fff;
+    padding-top: 7rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    overflow: hidden;
+}
+
+.container header h1 {
+    font-size: 4rem;
+}
+
+.container header p {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.container header img {
+    width: 350px;
+margin-top: 5rem;
+}
+
+.body {
+    background: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+padding: 0 4rem;
+}
+.body h2 {
+    font-size: 3rem;
+}
+
+.block-label {
+display: block;
+font-size: 2rem;
+font-weight: bold;
+margin-top: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.input {
+    outline: none;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 1.2rem 2rem;
+    border-radius: 6px;
+}
+.chkbx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+input[type=checkbox]{
+    margin-right: 1rem;   
+}
+
+.chkbx__text {
+ font-size: 1.4rem;
+ line-height: 20px;
+}
+
+.chkbx__text a {
+    color: #013243;
+}
+
+.chkbx__text a:hover {
+    text-decoration: none;
+}
+
+button {
+    margin-top: 2rem;
+    width: 100%;
+    color: #fff;
+    background: #013243;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    font-family: 'Roboto';
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: #03485f;
+}
+
+.challenge {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.challenge a {
+    color: #013243;
+}
+.challenge a:hover {
+    text-decoration: none;
+}
