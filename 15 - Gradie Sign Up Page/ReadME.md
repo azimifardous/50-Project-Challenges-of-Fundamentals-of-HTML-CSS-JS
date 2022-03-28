@@ -1,6 +1,6 @@
 ## Gradie Sign Up Page Challenge - by Codewell.cc
 
-- Full Resposive (Mobile, Tablet, Desktop)
+- Full Responsive (Mobile, Tablet, Desktop)
 - Used only HTML & CSS
 - Mobile Approach First
 
