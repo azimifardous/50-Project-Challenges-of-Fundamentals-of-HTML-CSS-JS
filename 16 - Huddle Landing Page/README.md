@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with curved sections solution
+# Frontend Mentor - Huddle landing page
 
 ## Table of contents
 
@@ -16,7 +16,7 @@
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://huddle-page-challenge.netlify.app/
 
 ### Built with
 
