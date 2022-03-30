@@ -9,8 +9,8 @@
 
 ### The challenge
 
-- It is full responsive.
-- It is made as component-based. First components of the website are built separately and then comboined, which makes the component reusable and maintainble.
+- It is fully responsive.
+- It is made component-based. First components of the website are built separately and then combined, which makes the component reusable and maintainable.
 
 
 ### Links
