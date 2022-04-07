@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header {
+    background: linear-gradient(#2B75EC, #2EC4DE);
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.converter {
+    display: flex;
+    align-items: center;
+}
+.converter input {
+    border: 0;
+    outline: none;
+    font-size: 5rem;
+    background: none;
+    border-bottom: 2px solid black;
+    padding: 1rem 0;
+    width: 80px;
+    margin-right: 0.5rem;
+    text-align: center;
+    color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.body {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -3rem;
+    background: white;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.info p {
+    font-size:1.8rem;
+    margin-top: 0.5rem;
+}
+
+.challenge p {
+    font-size: 1.4rem;
+}
+
+.challenge p a {
+    color: #000;
+    transition: 0.2s ease;
+}
+
+.challenge p a:hover {
+    text-decoration: none;
+}

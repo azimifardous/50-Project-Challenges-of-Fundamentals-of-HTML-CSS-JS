@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <div class="converter">
+          <input type="number" id="number" autofocus oninput="convert()" />
+        </div>
+      </header>
+      <section class="body">
+        <div class="info">
+          <h2>Length (Meter/Feet)</h2>
+          <p id="length">0 meter = 0 Feet</p>
+        </div>
+        <div class="info">
+          <h2>Volume (Liter/Gallon)</h2>
+          <p id="volume">0 Liter = 0 Gallon</p>
+        </div>
+        <div class="info">
+          <h2>Mass (Kilogram/Pounds)</h2>
+          <p id="mass">0 Kilo = 0 Pounds</p>
+        </div>
+        <div class="challenge">
+          <p>
+            Challenge by <a href="https://scrimba.com/">Scrimba</a> - Coded by
+            <a href="https://twitter.com/azimifardous">AIZ</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
