@@ -1,0 +1,73 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+flex-direction: column;
+    background: #D1D8EC;
+ 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    width: 400px;
+    height: 150px;
+}
+
+#number {
+    font-size: 7rem;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0 5rem;
+}
+
+button {
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 6rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+button:hover {
+    color: #fff;
+}
+
+.challenge {
+    margin: 2rem;
+}
+
+.challenge p {
+    font-size: 2rem;
+}
+
+.challenge p a {
+    color: black;
+    transition:  text-decoration 0.2s ease;
+}
+
+.challenge p a:hover {
+    text-decoration: none;
+}
