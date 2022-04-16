@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--======================= Meta Elements =======================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======================= CSS Links =======================-->
+    <link rel="stylesheet" href="styles.css">
+    <!--======================= Icons =======================-->
+    <script src="https://kit.fontawesome.com/508a0acc27.js" crossorigin="anonymous"></script>
+    <!--======================= Title =======================-->
+    <title>Passowrd Generator</title>
+</head>
+
+<body>
+    <!--======================= Password Generator =======================-->
+    <div class="generator-wrapper">
+        <div class="generator__header">
+            <h1 class="generator__heading">Generate a<br><span class="green__heading">random password</span></h1>
+            <p>Never use insecure password again.</p>
+        </div>
+        <div class="container">
+            <button class="pass-btn">🔑 Generate Passwords</button>
+            <label for="length">Length</label>
+            <input type="number" id="length" value="8" min="8" max="20" />
+        </div>
+        <hr>
+        <div class="generator__inputs">
+            <div class="input_01">
+                <input class="input pass1" value="..." readonly>
+                <input class="input pass2" value="..." readonly>
+            </div>
+            <div class="input_02" class="input">
+                <input class="input pass3" value="..." readonly>
+                <input class="input pass4" value="..." readonly>
+            </div>
+        </div>
+        <span class="copied">Copied!</span>
+        <span class="challenge">Challenge by <a href="https://scrimba.com/">Scrimba</a> - Coded by <a
+                href="https://twitter.com/azimifardous">AIZ</a></span>
+    </div>
+    <!--======================= DarkMode Toggler Button =======================-->
+    <div class="darkmode-btn">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class='fas fa-sun'></i>
+            <div class='ball'>
+        </label>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

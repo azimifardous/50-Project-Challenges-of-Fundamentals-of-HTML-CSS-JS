@@ -1,0 +1,268 @@
+/*======================= Google Fonts =======================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*======================= Base =======================*/
+:root {
+  /* Color Pallete */
+  --primary-color: #111827;
+  --secondary-color: #10b981;
+  --accent-color: #6b7280;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the html element's font-size to 62.5% and then using "rem" unit 
+for measurments make the calculation easy; by defualt 1rem = 16px but if you set this to 62.5%
+then 62.5% * 16 = 10px, it means now 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+body.darkmode {
+  background-color: var(--primary-color);
+}
+
+/*======================= Theme =======================*/
+.darkmode-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  margin-right: 2rem;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  width: 50px;
+}
+
+body.darkmode .label {
+  background-color: var(--secondary-color);
+}
+.ball {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  left: 2px;
+  position: absolute;
+  top: 3px;
+  transition: transform 0.2s linear;
+  width: 20px;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: var(--primary-color);
+}
+
+.fa-sun {
+  color: white;
+}
+
+.generator-wrapper {
+  -webkit-backdrop-filter: blur(5.4px);
+  align-items: center;
+  backdrop-filter: blur(5.4px);
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 5rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .generator-wrapper {
+    width: 400px;
+    align-items: flex-start;
+  }
+}
+body.darkmode .generator-wrapper {
+  -webkit-backdrop-filter: blur(7.1px);
+  backdrop-filter: blur(7.1px);
+  background: rgba(31, 41, 55, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.generator__header {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.generator__heading {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.green__heading {
+  color: var(--secondary-color);
+}
+
+.generator__header p {
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+body.darkmode .generator__heading {
+  color: #fff;
+}
+
+body.darkmode .generator__header p {
+  color: #e5e7eb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+.container label {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body.darkmode .container label {
+  color: #fff;
+}
+.container #length {
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.container #length:focus {
+  outline: none;
+}
+.pass-btn {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  transition: 0.2s ease;
+}
+.pass-btn:active {
+  transform: scale(0.9);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--accent-color);
+  border-radius: 1px;
+}
+.generator__inputs {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.generator__inputs .input {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  height: 30px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  width: 100px;
+  cursor: text;
+  font-family: "Roboto", sans-serif;
+}
+.input:focus {
+  outline: none;
+}
+.input:active {
+  transform: scale(0.95);
+}
+
+.input_01,
+.input_02 {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .generator__inputs .input {
+    width: 48%;
+  }
+}
+
+.copied {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  top: 4%;
+  left: 45%;
+  transform: scale(0);
+  transition: 0.2s ease;
+}
+
+.copied.active {
+  transform: scale(1);
+}
+
+.challenge {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+.challenge a {
+  color: var(--primary-color);
+}
+
+.challenge a:hover {
+  text-decoration: none;
+}
+
+body.darkmode .challenge,
+body.darkmode .challenge a {
+  color: #fff;
+}
