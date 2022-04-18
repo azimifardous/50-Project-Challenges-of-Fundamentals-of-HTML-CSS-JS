@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body class="bg-lightgrayishcyan flex h-screen flex-col justify-center items-center font-space text-base">
+    <img src="/public/images/logo.svg" alt="">
+    <div
+        class="bg-whitex w-80 rounded-xl flex flex-col justify-center items-center p-8 mt-4 md:w-700 md:flex-row md:mt-8 md:justify-between md:p-10">
+        <div>
+            <div class="flex flex-col items-start">
+                <h2 class="text-darkgrayishcyan text-left mb-2">Bill</h2>
+                <div class="bg-verylightgrayishcyan flex py-2 px-4 rounded-md">
+                    <img src="/public/images/icon-dollar.svg" alt="dollar-sign" class="h-5">
+                    <input type="number" placeholder="0" value=""
+                        class="bill border-none bg-transparent focus:outline-none text-right text-verydarkcyan">
+                </div>
+                <div class="mt-8">
+                    <h2 class="text-darkgrayishcyan text-left mb-2">Select Tip %</h2>
+                    <div class="w-full flex justify-between items-center">
+                        <button value="0.05"
+                            class="tip-btn bg-verydarkcyan text-whitex w-full mr-2 rounded-md py-1 hover:bg-strongcyan active:scale-95 transition-all">5%</button>
+                        <button value="0.10"
+                            class="tip-btn bg-verydarkcyan text-whitex w-full rounded-md py-1 hover:bg-strongcyan active:scale-95 transition-all">10%</button>
+                    </div>
+                    <div class="w-full flex justify-between items-center mt-2">
+                        <button value="0.15"
+                            class="tip-btn bg-verydarkcyan text-whitex w-full mr-2 rounded-md py-1 hover:bg-strongcyan active:scale-95 transition-all">15%</button>
+                        <button value="0.20"
+                            class="tip-btn bg-verydarkcyan text-whitex w-full rounded-md py-1 hover:bg-strongcyan active:scale-95  transition-all">20%</button>
+                    </div>
+                    <div class="w-full flex justify-between items-center mt-2">
+                        <button value="0.25"
+                            class="tip-btn bg-verydarkcyan text-whitex w-full mr-2 rounded-md py-1 hover:bg-strongcyan active:scale-95 transition-all">25%</button>
+                        <input type="number" placeholder="Custom" value=""
+                            class="custom-btn w-full bg-verylightgrayishcyan text-verydarkcyan text-center focus:outline-2 focus:outline-strongcyan transition py-1 rounded-md">
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="text-darkgrayishcyan text-left mb-2">Number of People</h2>
+                    <div class="bg-verylightgrayishcyan flex py-2 px-4 rounded-md ">
+                        <img src="/public/images/icon-person.svg" alt="dollar-sign" class="h-5">
+                        <input type="number" min="1" value="1" placeholder="1"
+                            class="people-num border-none bg-transparent focus:outline-none text-right text-verydarkcyan"
+                            required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-verydarkcyan rounded-xl w-full p-4 mt-8 md:w-1/2 md:h-full md:mt-0 md:flex md:flex-col md:justify-between md:p-8 md:ml-8 overflow-hidden">
+            <div>
+                <div class="flex justify-between items-center">
+                    <h3 class="text-whitex">Tip Amount <span class="block text-grayishcyan text-sm"> / person</span>
+                    </h3>
+                    <p class="tip-amount text-2xl text-strongcyan md:text-4xl">$0.00</p>
+                </div>
+                <div class="flex justify-between items-center mt-4 md:mt-8">
+                    <h3 class="text-whitex">Total <span class="block text-grayishcyan text-sm"> / person</span>
+                    </h3>
+                    <p class="total text-2xl text-strongcyan md:text-4xl">$0.00</p>
+                </div>
+            </div>
+            <button type="reset"
+                class="reset-btn w-full bg-strongcyan text-verydarkcyan hover:bg-lightgrayishcyan transition-all mt-8 rounded-sm text-lg uppercase py-1 md:mt-0">Reset</button>
+        </div>
+    </div>
+    <div class="mt-4 mx-16 text-center md:mx-0">Challenge by <a href="" class="underline hover:no-underline">Frontend
+            Mentor</a> -
+        Coded by <a href="https://twitter.com/azimifardous" class="underline hover:no-underline">AIZ</a>.
+    </div>
+    <script src="/public/index.js"></script>
+</body>
+
+</html>
