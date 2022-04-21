@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/output.css">
+    <title>Invoice Generator</title>
+</head>
+
+<body class="font-inter flex flex-col h-screen justify-center items-center bg-gray-700">
+    <div
+        class="bg-gray-900 mx-4 w-80 md:max-w-md md:w-1/3 rounded-lg overflow-hidden flex flex-col items-center justify-between">
+        <div class="bg-sky-800 text-white text-center py-8 w-full">
+            <h1 class="text-3xl mb-2 font-bold">Invoice Creator</h1>
+            <p class="text-sm text-gray-200">Thanks for choosing GoodCorp, LLC!</p>
+        </div>
+        <div class="flex p-4 w-full">
+            <button
+                class="wash bg-gray-300 rounded-lg text-sm w-full mr-2 md:px-2 py-2 hover:bg-gray-100 transition-all">Wash
+                Card:
+                $10</button>
+            <button
+                class="lawn bg-gray-300 rounded-lg text-sm w-full mr-2 md:px-2 py-2 hover:bg-gray-100 transition-all">Mow
+                Lawn: $20</button>
+            <button
+                class="pull bg-gray-300 rounded-lg text-sm w-full md:px-2 py-2 hover:bg-gray-100 transition-all">Pull
+                Weeds: $30</button>
+        </div>
+        <div class="tasks flex flex-col justify-between text-white px-8 w-full">
+            <div class="task-prices flex justify-between w-full">
+                <span class="text-sm">TASK</span>
+                <span class="text-sm">TOTAL</span>
+            </div>
+            <div class="task-list-container w-full">
+
+            </div>
+        </div>
+        <hr class="w-96 bg-gray-200 my-4">
+        <div class="text-gray-300 text-sm flex justify-between px-8 w-full">
+            <div class="mr-8">
+                <h3>Notes</h3>
+                <p class="mt-2">We accept cash, credit card, or PayPal.</p>
+            </div>
+            <div>
+                <h3>Total Amount</h3>
+                <p class="total text-right text-3xl text-white mt-2">$0</p>
+            </div>
+        </div>
+        <button
+            class="reset w-72 bg-sky-800 my-4 rounded-lg py-2 text-white text-lg hover:bg-sky-700 transition-all">Send
+            Invoice</button>
+    </div>
+    <div class="text-white mt-4">Solo Challenge by <a href="https://scrimba.com/" target="_blank"
+            class="underline hover:no-underline">Scrimba</a> - Coded by
+        <a href="http://twitter.com/azimifardous" target="_blank" class="underline hover:no-underline">AIZ</a>.
+    </div>
+    <script src="/public/main.js"></script>
+</body>
+
+</html>
