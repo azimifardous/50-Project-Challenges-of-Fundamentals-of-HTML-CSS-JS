@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+
+html {
+  height: 100vh;
+  font-family: "Baloo 2";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#5da4d9, #fff);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#emoji-container {
+  margin: 40px;
+  text-align: center;
+}
+
+#emoji-container span {
+  margin: 10px;
+  font-size: 60px;
+}
+
+#push-btn,
+#unshift-btn {
+  background-color: #80d87f;
+}
+
+#shift-btn,
+#pop-btn {
+  background-color: #e23349;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  height: 30px;
+  padding: 5px 0;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+  font-family: "Baloo 2";
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  letter-spacing: 1px;
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0 auto;
+  font-family: "Baloo 2";
+  transition: 0.2s ease;
+  width: 250px;
+  margin-left: 5px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 500px;
+}
