@@ -1,0 +1,113 @@
+/*========== Google Fonts ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+/*========== Root ==========*/
+:root {
+  /* Color Palette */
+  --bg-color: #ede6db;
+  --primary-color: #417d7a;
+  --secondary-color: #1d5c63;
+  --accent-color: #1a3c40;
+
+  /* Font */
+  --font: "Ubuntu", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+/*========== Base ==========*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*========== Theme ==========*/
+.container {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#message {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.players {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.active {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+button {
+  border: none;
+  background-color: var(--accent-color);
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: var(--font);
+  font-size: 2rem;
+  margin-top: 5rem;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#resetBtn {
+  display: none;
+  background-color: var(--bg-color);
+  color: #000;
+}
