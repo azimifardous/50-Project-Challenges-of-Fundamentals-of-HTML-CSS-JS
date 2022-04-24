@@ -53,7 +53,8 @@ numbers.forEach((item) => {
 })
 
 equalBtn.addEventListener("click", function () {
-    inputNumber.textContent = eval(inputNumber.textContent)
+    let sum = eval(inputNumber.textContent)
+    inputNumber.textContent = roundOff(sum, 5)
 })
 
 resetBtn.addEventListener("click", function () {
@@ -64,3 +65,7 @@ deleteBtn.addEventListener("click", function () {
     inputNumber.textContent = inputNumber.textContent.slice(0, -1)
 })
 
+function roundOff(num, decimalPlaces = 0) {
+    let p = Math.pow(10, decimalPlaces);
+    return Math.round(num * p) / p;
+}
