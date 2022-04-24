@@ -1,0 +1,432 @@
+/*================ Google Fonts ================*/
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+
+/*================ Root ================*/
+:root {
+  /*================ Theme 1 ================*/
+  /* Background Colors */
+  --main-bg-1: hsl(222, 26%, 31%);
+  --toggle-bg-1: hsl(223, 31%, 20%);
+  --screen-bg-1: hsl(224, 36%, 15%);
+
+  /* Key Colors */
+  --reset-key-bg-1: hsl(225, 21%, 49%);
+  --reset-key-shadow-1: hsl(224, 28%, 35%);
+  --equal-key-bg-1: hsl(6, 63%, 50%);
+  --equal-key-shadow-1: hsl(6, 70%, 34%);
+  --key-bg-1: hsl(30, 25%, 89%);
+  --key-shadow-1: hsl(28, 16%, 65%);
+
+  /* Text Colors */
+  --txt-1: hsl(221, 14%, 31%);
+
+  /*================ Theme 2 ================*/
+  /* Background Colors */
+  --main-bg-2: hsl(0, 0%, 90%);
+  --toggle-bg-2: hsl(0, 5%, 81%);
+  --screen-bg-2: hsl(0, 0%, 93%);
+
+  /* Key Colors */
+  --reset-key-bg-2: hsl(185, 42%, 37%);
+  --reset-key-shadow-2: hsl(185, 58%, 25%);
+  --equal-key-bg-2: hsl(25, 98%, 40%);
+  --equal-key-shadow-2: hsl(25, 99%, 27%);
+  --key-bg-2: hsl(45, 7%, 89%);
+  --key-shadow-2: hsl(35, 11%, 61%);
+
+  /* Text Colors */
+  --txt-2: hsl(60, 10%, 19%);
+
+  /*================ Theme 3 ================*/
+  /* Background Colors */
+  --main-bg-3: hsl(268, 75%, 9%);
+  --toggle-bg-3: hsl(268, 71%, 12%);
+
+  /* Key Colors */
+  --reset-key-bg-3: hsl(281, 89%, 26%);
+  --reset-key-shadow-3: hsl(285, 91%, 52%);
+  --equal-key-bg-3: hsl(176, 100%, 44%);
+  --equal-key-shadow-3: hsl(177, 92%, 70%);
+  --key-bg-3: hsl(268, 47%, 21%);
+  --key-shadow-3: hsl(290, 70%, 36%);
+
+  /* Text Colors */
+  --txt-3: hsl(52, 100%, 62%);
+  --txt2-3: hsl(198, 20%, 13%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*================ Base ================*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.2rem;
+  background-color: var(--main-bg-1);
+}
+
+/*================ Bse Components ================*/
+.header {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-right: 0.7rem;
+}
+
+.themes {
+  display: flex;
+  align-items: flex-end;
+}
+
+.themes h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  margin-right: 1.2rem;
+}
+.theme {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  align-items: center;
+}
+
+.theme_numbers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.theme-toggler {
+  width: 60px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.theme_ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.2rem;
+  transition: transform 0.2s linear;
+}
+
+.header h1 {
+  font-size: 3.2rem;
+}
+
+.input {
+  width: 400px;
+  text-align: right;
+  height: 80px;
+  display: flex;
+  padding: 0 2rem;
+  border-radius: 10px;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.calculator {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.calculator .numbers {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers .number {
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.del {
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.otherBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+.otherBtns button {
+  width: 100%;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.reset-btn {
+  margin-right: 1rem;
+}
+
+.challenge {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .calc-container {
+    transform: scale(0.8);
+  }
+  .challenge {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}
+
+/*================ Theme 1 ================*/
+.theme1 .themes h2 {
+  color: #fff;
+}
+
+.theme1 .theme_numbers {
+  color: #fff;
+}
+
+.theme1 .theme-toggler {
+  background-color: var(--toggle-bg-1);
+}
+
+.theme1 .theme_ball {
+  background-color: var(--equal-key-bg-1);
+}
+
+.theme1 .header h1 {
+  color: #fff;
+}
+.theme1 .input {
+  color: #fff;
+  background-color: var(--screen-bg-1);
+}
+
+.theme1 .calculator {
+  background-color: var(--toggle-bg-1);
+}
+.theme1 .numbers .number {
+  background-color: var(--key-bg-1);
+  box-shadow: 0 3px 0 0 var(--key-shadow-1);
+  color: var(--txt-1);
+}
+.theme1 .del {
+  color: #fff;
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-1);
+  background-color: var(--reset-key-bg-1);
+}
+.theme1 .reset-btn {
+  background-color: var(--reset-key-bg-1);
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-1);
+  color: #fff;
+}
+.theme1 .equal-btn {
+  background-color: var(--equal-key-bg-1);
+  box-shadow: 0 3px 0 0 var(--equal-key-shadow-1);
+  color: #fff;
+}
+
+.theme1 .challenge {
+  color: #fff;
+}
+
+.theme1 .challenge a {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.theme1 .challenge a:hover {
+  color: var(--equal-key-bg-1);
+  text-decoration: none;
+}
+/*================ Theme 2 ================*/
+.theme2 {
+  background-color: var(--main-bg-2);
+}
+.theme2 .themes h2 {
+  color: var(--txt-2);
+}
+
+.theme2 .theme_numbers {
+  color: var(--txt-2);
+}
+
+.theme2 .theme-toggler {
+  background-color: var(--toggle-bg-2);
+}
+
+.theme2 .theme_ball {
+  background-color: var(--equal-key-bg-1);
+}
+
+.theme2 .header h1 {
+  color: var(--txt-2);
+}
+.theme2 .input {
+  color: var(--txt-2);
+  background-color: #fff;
+}
+
+.theme2 .calculator {
+  background-color: var(--toggle-bg-2);
+}
+.theme2 .numbers .number {
+  background-color: var(--key-bg-2);
+  box-shadow: 0 3px 0 0 var(--key-shadow-2);
+  color: var(--txt-1);
+}
+.theme2 .del {
+  color: #fff;
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-2);
+  background-color: var(--reset-key-bg-2);
+}
+.theme2 .reset-btn {
+  background-color: var(--reset-key-bg-2);
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-2);
+  color: #fff;
+}
+.theme2 .equal-btn {
+  background-color: var(--equal-key-bg-2);
+  box-shadow: 0 3px 0 0 var(--equal-key-shadow-2);
+  color: #fff;
+}
+
+.theme2 .challenge {
+  color: var(--txt-2);
+}
+.theme2 .challenge a {
+  color: var(--txt-2);
+  transition: all 0.2s ease;
+}
+
+.theme2 .challenge a:hover {
+  color: var(--equal-key-bg-2);
+  text-decoration: none;
+}
+/*================ Theme 3 ================*/
+.theme3 {
+  background-color: var(--main-bg-3);
+}
+.theme3 .themes h2 {
+  color: var(--txt-3);
+}
+
+.theme3 .theme_numbers {
+  color: var(--txt-3);
+}
+
+.theme3 .theme-toggler {
+  background-color: var(--toggle-bg-3);
+}
+
+.theme3 .theme_ball {
+  background-color: var(--equal-key-bg-3);
+}
+
+.theme3 .header h1 {
+  color: var(--txt-3);
+}
+.theme3 .input {
+  color: var(--txt-3);
+  background-color: var(--toggle-bg-3);
+}
+
+.theme3 .calculator {
+  background-color: var(--toggle-bg-3);
+}
+.theme3 .numbers .number {
+  background-color: var(--key-bg-3);
+  box-shadow: 0 3px 0 0 var(--key-shadow-3);
+  color: var(--txt-3);
+}
+.theme3 .del {
+  color: #fff;
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-3);
+  background-color: var(--reset-key-bg-3);
+}
+.theme3 .reset-btn {
+  background-color: var(--reset-key-bg-3);
+  box-shadow: 0 3px 0 0 var(--reset-key-shadow-3);
+  color: #fff;
+}
+.theme3 .equal-btn {
+  background-color: var(--equal-key-bg-3);
+  box-shadow: 0 3px 0 0 var(--equal-key-shadow-3);
+  color: var(--txt2-3);
+}
+
+.theme3 .challenge {
+  color: #fff;
+}
+
+.theme3 .challenge a {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.theme3 .challenge a:hover {
+  color: var(--txt-3);
+  text-decoration: none;
+}
