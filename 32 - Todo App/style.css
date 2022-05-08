@@ -358,3 +358,22 @@ button {
 .filters button:focus {
   color: var(--bright-blue);
 }
+
+.challenge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.challenge a {
+  color: black;
+}
+
+.dark .challenge {
+  color: var(--light-primary);
+}
+
+.dark .challenge a {
+  color: var(--light-primary);
+}
