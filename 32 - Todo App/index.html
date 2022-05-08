@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header--block">
+        <div class="heading">
+            <h1>T O D O</h1>
+            <div class="heading__mode">
+                <img src="images/icon-moon.svg" alt="" class="moon">
+                <img src="images/icon-sun.svg" alt="" class="sun">
+            </div>
+        </div>
+        <div class="heading__input">
+            <label for="text">
+                <div class="circle"></div>
+            </label>
+            <input type="text" placeholder="Type and Press Enter to add a task..." class="typeInp" autofocus>
+        </div>
+    </header>
+    <section class="todos--block">
+        <ul class="list-items"></ul>
+        <div class="left-items">
+            <span class="itemLeft">0 Items</span>
+            <button class="clearBtn">Clear All</button>
+        </div>
+    </section>
+    <div class="filter--block">
+        <div class="filters">
+            <button class="allBtn">All</button>
+            <button class="activeBtn">Active</button>
+            <button class="completedBtn">Completed</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

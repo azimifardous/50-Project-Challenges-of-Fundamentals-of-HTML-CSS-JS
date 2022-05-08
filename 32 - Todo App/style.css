@@ -1,0 +1,360 @@
+/**======= Google Fonts =======**/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+/**======= Root =======**/
+:root {
+  /** Primary Colors **/
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient(
+    110deg,
+    hsl(192, 100%, 67%) 0%,
+    hsl(280, 87%, 65%) 100%
+  );
+
+  /** Light Theme **/
+  --light-primary: hsl(0, 0%, 98%);
+  --light-secondary: hsl(236, 9%, 61%);
+  --light-accent: hsl(233, 11%, 84%);
+  --light-alt: hsl(235, 19%, 35%);
+  --light-alt2: hsl(236, 33%, 92%);
+
+  /** Dark Theme **/
+  --dark-primary: hsl(235, 21%, 11%);
+  --dark-secondary: hsl(234, 39%, 85%);
+  --dark-accent: hsl(234, 11%, 52%);
+  --dark-hover: hsl(236, 33%, 92%);
+  --dark-alt: hsl(235, 24%, 19%);
+  --dark-alt2: hsl(233, 14%, 35%);
+  --dark-alt3: hsl(237, 14%, 26%);
+}
+
+/**======= Base =======**/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--light-alt2);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.dark {
+  background-color: var(--dark-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/**======= Components =======**/
+
+/* Header */
+.header--block {
+  background-image: url(images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.dark .header--block {
+  background-image: url(images/bg-mobile-dark.jpg);
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+.heading__mode img {
+  cursor: pointer;
+  width: 25px;
+}
+
+.sun {
+  display: none;
+}
+
+.dark .sun {
+  display: block;
+}
+
+.dark .moon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header--block {
+    background-image: url(images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .dark .header--block {
+    background-image: url(images/bg-desktop-dark.jpg);
+  }
+}
+
+/* Input */
+.heading__input {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.dark .heading__input {
+  background-color: var(--dark-alt);
+}
+
+.heading__input .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--light-secondary);
+  margin-right: 1.5rem;
+}
+
+.dark .heading__input .circle {
+  border: 1px solid var(--dark-alt2);
+}
+
+.heading__input input {
+  background: none;
+  border: none;
+  color: var(--light-alt);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  caret-color: var(--bright-blue);
+  width: 100%;
+}
+
+.dark .heading__input input {
+  color: var(--dark-secondary);
+}
+
+.heading__input input:focus {
+  outline: none;
+}
+
+.heading__input input::placeholder {
+  color: var(--light-secondary);
+}
+
+.dark .heading__input input::placeholder {
+  color: var(--dark-accent);
+}
+
+.invalid {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.4em red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/**======= Tasks List =======*/
+.todos--block {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  margin-top: 2rem;
+  /* position: relative;
+  bottom: 10px; */
+}
+.list-items {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+  list-style: none;
+  background-color: #fff;
+  width: 100%;
+}
+
+.dark .list-items,
+.dark .left-items {
+  background-color: var(--dark-alt);
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--light-accent);
+}
+
+.dark .item {
+  border-bottom: 1px solid var(--dark-alt3);
+}
+
+.task-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doneBtn {
+  border: none;
+  background: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--light-secondary);
+  margin-right: 1rem;
+}
+
+.check-ico {
+  display: none;
+}
+
+.checked .doneBtn {
+  background: var(--check-bg);
+  border: none;
+}
+
+.checked .check-ico {
+  display: block;
+}
+
+.task {
+  color: var(--light-alt);
+}
+
+.dark .task {
+  color: var(--dark-secondary);
+}
+
+.dark .checked .task {
+  color: var(--dark-accent);
+}
+
+.deleteBtn {
+  border: none;
+  background: none;
+  visibility: hidden;
+}
+
+.item:hover .deleteBtn {
+  visibility: visible;
+}
+
+.deleteBtn img {
+  width: 15px;
+}
+
+.checked .task {
+  text-decoration: line-through;
+  color: var(--light-accent);
+}
+
+.clearBtn,
+.filters button {
+  border: none;
+  background: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--light-secondary);
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.clearBtn:hover,
+.filters button:hover {
+  color: var(--light-alt);
+}
+
+.dark .clearBtn,
+.dark .filters button {
+  color: var(--dark-accent);
+}
+
+.dark .clearBtn:hover,
+.dark .filters button:hover {
+  color: var(--dark-secondary);
+}
+
+.itemLeft {
+  color: var(--light-secondary);
+}
+
+.left-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
+}
+
+.filter--block {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  margin: 2rem 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1.4rem 0;
+}
+
+.dark .filters {
+  background: var(--dark-alt);
+}
+
+.filters button:focus {
+  color: var(--bright-blue);
+}
