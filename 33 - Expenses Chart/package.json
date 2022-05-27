@@ -1,0 +1,18 @@
+{
+  "name": "33---expenses-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "tailwindcss build src/input.css -o public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
