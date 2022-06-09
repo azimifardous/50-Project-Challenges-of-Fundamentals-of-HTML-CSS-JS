@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the App -->
+    <title>Quiz App</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/508a0acc27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <!-- Starting Page -->
+        <div class="start-page" data-start>
+            <img src="/images/quiz.png" alt="" class="logo">
+            <h1 class="title">Quizzme</h1>
+            <div class="body">
+                <h2>Let's Play!</h2>
+                <h3>Play now and Enjoy</h3>
+            </div>
+            <button class="btn btn-primary" id="play-btn">Play Now</button>
+            <button class="btn btn-secondary" id="about-btn">About the Game</button>
+        </div>
+        <!-- About the Game Page -->
+        <div class="about-thegame hide" data-about>
+            <h2>Quizzme</h2>
+            <ul>
+                <li>Quizzme is a fun based game that is made in order to practice and master my web development skills.
+                </li>
+                <li>All used assets in this project are taken for free and there's not any copyright at all.</li>
+                <li>UI/UX design is inspired by <a href="https://www.behance.net/sithiramithmal">Sithira Mithmal</a> A
+                    thanks to
+                    him.</li>
+            </ul>
+            <h2 class="howto">How to play? 😉</h2>
+            <ul>
+                <li>By pressing the play button in the home page, you're going to be referred to another page, where you
+                    have to select one of the categories that are listed there. Which are Movie related quizzes,
+                    Technology related quizzes, and Anime related quizzes.
+                </li>
+                <li>By selecting any one of the categories out there, you are going to start answering each category's
+                    questions.</li>
+                <li>
+                    Each category has 10 questions, the hardness and easiness of the questions are not based on their
+                    respective numbers.
+                </li>
+                <li>
+                    You have to select one and only single answer for each question.
+
+                </li>
+                <li>You cannot go to the next question unless you submit and check your answer.
+                </li>
+                <li>
+                    After you click on the check button, the result is going to be shown, the correct answer is going to
+                    get a green background and the rest that are incorrect are going to have a red background.
+                </li>
+                <li>
+                    It doesn't matter which answer is selected, whether it would be correct or incorrect, it has a
+                    darker text color, which you can differentiate from the rest.
+                </li>
+                <li>After you are done with answering every question out there, your result and score will be shown
+                    there. However, if you don't answer anything correctly, you won't have any score at all. But you can
+                    try again.</li>
+                <li>
+                    Note: After finishing and playing again your recent data and result won't save. It's going to start
+                    over again.
+                </li>
+            </ul>
+            <div class="madeby">
+                <h3>Made by: <br> Ahmad Fardous Azimi - Frontend Developer</h3>
+                <a href="https://twitter.com/azimifardous"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/azimifardous"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <!-- Categories Page -->
+        <div class="category-page hide" data-category>
+            <h2>Select one of the categories below:</h2>
+            <div class="categories">
+                <button value="movie" class="category">
+                    <img src="images/video-player.png" alt="">
+                </button>
+                <button value="tech" class="category">
+                    <img src="images/technology.png" alt="">
+                </button>
+                <button value="anime" class="category">
+                    <img src="images/otaku.png" alt="">
+                </button>
+            </div>
+            <buttton class="btn btn-primary" id="start-btn">Start</buttton>
+        </div>
+        <!-- Quiz Page -->
+        <div class="quiz hide" data-quiz>
+            <p id="question--tracker"></p>
+            <h2 class="question" data-question></h2>
+            <label for="a" class="answer-choice">
+                <input type="radio" name="answer" id="a" class="response">
+                <span class="value">
+                    <p class="order">01</p>
+                    <p class="txt a"></p>
+                </span>
+            </label>
+            <label for="b" class="answer-choice">
+                <input type="radio" name="answer" id="b" class="response">
+                <span class="value">
+                    <p class="order">02</p>
+                    <p class="txt b"></p>
+                </span>
+            </label>
+            <label for="c" class="answer-choice">
+                <input type="radio" name="answer" id="c" class="response">
+                <span class="value">
+                    <p class="order">03</p>
+                    <p class="txt c"></p>
+                </span>
+            </label>
+            <label for="d" class="answer-choice">
+                <input type="radio" name="answer" id="d" class="response">
+                <span class="value">
+                    <p class="order">04</p>
+                    <p class="txt d"></p>
+                </span>
+            </label>
+            <div class="buttons">
+                <button class="btn btn-secondary" id="check-btn">Check</button>
+                <button class="btn btn-primary" disabled id="next-btn">Next</button>
+            </div>
+        </div>
+        <!-- Score Page -->
+        <div class="score hide">
+            <div class="total" data-total>Total correct answers<br> <span id="score-el"></span></div>
+            <div class="score-board">
+                <span class="final">Your Final Score Is</span>
+                <div class="circle-el" data-circle>60</div>
+            </div>
+            <div class="try">
+                <button class="btn btn-primary" id="try-again"><i class="fa-solid fa-rotate"></i> Try Again</button>
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
