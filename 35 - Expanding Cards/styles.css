@@ -1,0 +1,140 @@
+:root {
+  /* Themes */
+  --primary-color: #e6e7ee;
+  --secondary-color: #44476a;
+  --accent-color: #a91e2c;
+  --font-color: #262833;
+  /* Fonts */
+  --font: "Nunito", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--font);
+  background-color: var(--primary-color);
+}
+
+.card {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 34px;
+  background: var(--primary-color);
+  box-shadow: 17px 17px 43px #c1c2c8, -17px -17px 43px #ffffff;
+  padding: 10rem 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: width 0.7s ease-out;
+}
+
+.card.expanded {
+  width: 500px;
+  padding: 1rem 2rem;
+  cursor: default;
+}
+.user-icon {
+  position: relative;
+}
+
+.user-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-icon i {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1%;
+  right: -5%;
+  /* left: 5%; */
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+
+.user-quote {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.expanded .user-quote {
+  display: block;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info .name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.expanded .name {
+  font-size: 2.4rem;
+}
+.user-info .job {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  color: var(--font-color);
+}
+
+.expanded .job {
+  font-size: 2rem;
+}
+hr {
+  display: none;
+  appearance: none;
+  border: 1px solid var(--accent-color);
+  width: 30%;
+  border-radius: 15px;
+}
+
+.expanded hr {
+  display: block;
+}
+
+.me {
+  position: fixed;
+  bottom: 3%;
+  font-size: 1.5rem;
+}
+
+.me a {
+  color: var(--font-color);
+}
+
+.me a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
