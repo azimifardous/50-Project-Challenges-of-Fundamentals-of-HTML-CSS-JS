@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f6f7fb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* font-size: 3rem; */
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 350px;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+  height: 4px;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%, -50%);
+  width: 0%;
+  z-index: -1;
+  height: 4px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #3498db;
+}
+
+.btn {
+  background-color: #3498db;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 3rem;
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
