@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.bg {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(/bg.jpg);
+  filter: blur(100px);
+  background-position: center;
+  background-size: cover;
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: opacity 1s ease;
+}
