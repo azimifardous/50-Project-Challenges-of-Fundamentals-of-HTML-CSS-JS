@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.ps5,
+.xbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.ps5 {
+  background-image: url(/img/ps5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  flex: 0.5;
+  transition: flex 0.8s ease;
+}
+
+.ps5:hover {
+  flex: 0.75;
+}
+
+.ps5::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 55, 145, 0.6);
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.8s ease;
+}
+
+.ps5:hover::before {
+  width: 75%;
+}
+
+.ps5:hover + .xbx::before {
+  width: 40%;
+}
+.xbx {
+  flex: 0.5;
+  background-image: url(/img/x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  transition: flex 0.8s ease;
+}
+
+.xbx:hover {
+  flex: 0.75;
+}
+
+.xbx::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(35, 61, 35, 0.4);
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.8s ease;
+}
+
+.xbx:hover::before {
+  width: 60%;
+}
+
+button {
+  appearance: none;
+  background: none;
+  padding: 1rem 3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+}
+
+.xbx button:hover {
+  background-color: rgb(16, 124, 16);
+  border-color: rgb(16, 124, 16);
+}
+.ps5 button:hover {
+  background-color: rgb(22, 100, 225);
+  border-color: rgb(22, 100, 225);
+}
