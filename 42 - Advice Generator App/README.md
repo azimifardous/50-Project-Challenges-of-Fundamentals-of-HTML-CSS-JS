@@ -24,7 +24,6 @@ Users should be able to:
 
 ![](./design/desktop-preview.jpg)
 ![](./design/active-states.jpg)
-![](./design/mobile-design.jpg)
 
 ### Links
 
