@@ -23,13 +23,13 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop-preview.jpg)
-![](./design/active-states.jpg.jpg)
-![](./design/mobile-design.jpg.jpg.jpg)
+![](./design/active-states.jpg)
+![](./design/mobile-design.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution Here](https://github.com/azimifardous/50-Project-Challenges-of-Fundamentals-of-HTML-CSS-JS.git)
+- Live Site URL: [Live Preview Here](https://quote-generator-ch.netlify.app/)
 
 ## My process
 
