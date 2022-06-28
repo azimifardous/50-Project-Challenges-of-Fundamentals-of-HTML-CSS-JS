@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --grayish-pink: #f7e2e2;
+  --sky-blue: #61a4bc;
+  --doger-blue: #5b7db1;
+  --dark-purple: #1a132f;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  min-height: 100vh;
+  background-color: var(--grayish-pink);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  margin: 2rem;
+}
+
+.starter {
+  background-color: var(--dark-purple);
+  color: var(--grayish-pink);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  height: 100px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  user-select: none;
+}
+
+.event:hover {
+  box-shadow: 0 0 10px 2px #ddcccc;
+  transform: translateY(-5px);
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  background-color: var(--sky-blue);
+  padding: 1rem;
+  /* border-radius: 5px; */
+}
+
+.desc {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    height: 400px;
+  }
+}
+.hide {
+  display: none;
+}
