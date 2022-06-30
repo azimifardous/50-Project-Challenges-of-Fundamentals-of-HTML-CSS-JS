@@ -11,7 +11,9 @@ User should be able to:
 
 #### Tip
 User is able to use any kind of markdowns to style his texts. For example:
+
 *hello world* - Emphasize
+
 **hello world** - Bold
 - Item 1
   - Sub Item
