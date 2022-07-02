@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding: 2rem 0; */
+  color: #fff;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 2rem;
+}
+
+#glass,
+.glass {
+  background: rgba(255, 255, 255, 1);
+  width: 200px;
+  height: 380px;
+  position: relative;
+  border-radius: 5px 5px 80px 80px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#water {
+  background-color: #7bb2ff;
+  position: absolute;
+  color: #232526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  bottom: 0px;
+  width: 250px;
+  height: 0;
+  transition: all 1s ease-out;
+}
+.water {
+  background-image: url("https://priteshgupta.com/demos/fill/waves.png");
+  background-position: top right;
+  background-size: cover;
+  position: absolute;
+  color: #232526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  bottom: 0px;
+  width: 250px;
+  height: 0;
+  transition: all 1s ease-out;
+}
+
+#glass .remaining,
+.glass span {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  color: #7bb2ff;
+}
+
+#glass .remaining {
+  position: absolute;
+  bottom: 50%;
+  transition: bottom 1s ease-out;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.glasses-container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.glasses-container .glass {
+  width: 90px;
+  height: 140px;
+  cursor: pointer;
+  border-radius: 5px 5px 40px 40px;
+}
+
+.glasses-container .glass .water {
+  width: 90px;
+  transition: all 0.5s ease-out;
+}
+.glasses-container .fill .water {
+  height: 200px;
+}
+
+.glasses-container .fill span {
+  color: #232526 !important;
+  z-index: 999;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    margin: 2rem;
+    text-align: center;
+  }
+  .glasses-container {
+    width: 300px;
+  }
+}
